@@ -174,25 +174,13 @@ init:
 
 
     // septimo estado: wpi 6 "on", todos los demás "off"
-    mov r0, #4 // wpi 4 set
-    mov r1, #1
-    bl pinMode
-
     mov r0, #4 // wpi 4 "off"
     mov r1, #0
     bl digitalWrite
 
-    mov r0, #5 // wpi 5 set
-    mov r1, #1
-    bl pinMode
-
     mov r0, #5 // wpi 5 "off"
     mov r1, #0
     bl digitalWrite
-
-    mov r0, #6 // wpi 6 set
-    mov r1, #1
-    bl pinMode
 
     mov r0, #6 // wpi 6 "on"
     mov r1, #1
@@ -205,17 +193,9 @@ init:
 
 
     // octavo estado: wpi 6 "on" y wpi 7 "on", todos los demás "off"
-    mov r0, #6 // wpi 6 set
-    mov r1, #1
-    bl pinMode
-
     mov r0, #6 // wpi 6 "on"
     mov r1, #1
     bl digitalWrite
-
-    mov r0, #7 // wpi 7 set
-    mov r1, #1
-    bl pinMode
 
     mov r0, #7 // wpi 7 "on"
     mov r1, #1
