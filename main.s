@@ -48,35 +48,35 @@ init:
     // GPIO 2  | wPi - 7 | octavo bit
 
     // setting wpi 0 to 7 as output
-    mov r0, #0
+    mov r0, #0 // wpi 0
     mov r1, #1
     bl pinMode
 
-    move r0, #1
+    move r0, #1 // wpi 1
     mov r1, #1
     bl pinMode
 
-    move r0, #2
+    move r0, #2 // wpi 2
     mov r1, #1
     bl pinMode
 
-    move r0, #3
+    move r0, #3 // wpi 3
     mov r1, #1
     bl pinMode
 
-    move r0, #4
+    move r0, #4 // wpi 4
     mov r1, #1
     bl pinMode
 
-    move r0, #5
+    move r0, #5 // wpi 5
     mov r1, #1
     bl pinMode
 
-    move r0, #6
+    move r0, #6 // wpi 6
     mov r1, #1
     bl pinMode
 
-    move r0, #7
+    move r0, #7 // wpi 7
     mov r1, #1
     bl pinMode
 
@@ -97,10 +97,6 @@ init:
     mov r1, #1
     bl digitalWrite
 
-    mov r0, #1 // wpi 1 set
-    mov r1, #1
-    bl pinMode
-
     mov r0, #1 // wpi 1 "on"
     mov r1, #1
     bl digitalWrite
@@ -112,30 +108,17 @@ init:
 
 
     // tercer estado: wpi 2 "on", todos los demás "off"
-    mov r0, #0  // wpi 0 set
-    mov r1, #1
-    bl pinMode
-
     mov r0, #0 // wpi 0 "off"
     mov r1, #0
     bl digitalWrite
-
-    mov r0, #1 // wpi 1 set
-    mov r1, #1
-    bl pinMode
 
     mov r0, #1 // wpi 1 "off"
     mov r1, #0
     bl digitalWrite
 
-    mov r0, #2 // wpi 2 set
-    mov r1, #1
-    bl pinMode
-
     mov r0, #2 // wpi 2 "on"
     mov r1, #1
     bl digitalWrite
-
 
     // cambio de estado
     mov r0, #1500
@@ -143,22 +126,13 @@ init:
 
 
     // cuarto estado: wpi 2 "on" y wpi 3 "on", todos los demás "off"
-    mov r0, #2 // wpi 2 set
-    mov r1, #1
-    bl pinMode
-
     mov r0, #2 // wpi 2 "on"
     mov r1, #1
     bl digitalWrite
 
-    mov r0, #3 // wpi 3 set
-    mov r1, #1
-    bl pinMode
-
     mov r0, #3 // wpi 3 "on"
     mov r1, #1
     bl digitalWrite
-
 
     // cambio de estado
     mov r0, #1500
@@ -166,25 +140,13 @@ init:
 
 
     // quinto estado: wpi 4 "on", todos los demás "off"
-    mov r0, #2 // wpi 2 set
-    mov r1, #1
-    bl pinMode
-
     mov r0, #2 // wpi 2 "off"
     mov r1, #0
     bl digitalWrite
 
-    mov r0, #3 // wpi 3 set
-    mov r1, #1
-    bl pinMode
-
     mov r0, #3 // wpi 3 "off"
     mov r1, #0
     bl digitalWrite
-
-    mov r0, #4 // wpi 4 set
-    mov r1, #1
-    bl pinMode
 
     mov r0, #4 // wpi 4 "on"
     mov r1, #1
@@ -197,17 +159,9 @@ init:
 
 
     // sexto estado: wpi 4 "on" y wpi 5 "on", todos los demás "off"
-    mov r0, #4 // wpi 4 set
-    mov r1, #1
-    bl pinMode
-
     mov r0, #4 // wpi 4 "on"
     mov r1, #1
     bl digitalWrite
-
-    mov r0, #5 // wpi 5 set
-    mov r1, #1
-    bl pinMode
 
     mov r0, #5 // wpi 5 "on"
     mov r1, #1
