@@ -93,9 +93,6 @@ init:
 
     
     // segundo estado: wpi 0 "on" y wpi 1 "on", todos los demás "off"
-    mov r0, #0 // wpi 0 "on"
-    mov r1, #1
-    bl digitalWrite
 
     mov r0, #1 // wpi 1 "on"
     mov r1, #1
@@ -126,9 +123,6 @@ init:
 
 
     // cuarto estado: wpi 2 "on" y wpi 3 "on", todos los demás "off"
-    mov r0, #2 // wpi 2 "on"
-    mov r1, #1
-    bl digitalWrite
 
     mov r0, #3 // wpi 3 "on"
     mov r1, #1
@@ -159,9 +153,6 @@ init:
 
 
     // sexto estado: wpi 4 "on" y wpi 5 "on", todos los demás "off"
-    mov r0, #4 // wpi 4 "on"
-    mov r1, #1
-    bl digitalWrite
 
     mov r0, #5 // wpi 5 "on"
     mov r1, #1
@@ -193,9 +184,6 @@ init:
 
 
     // octavo estado: wpi 6 "on" y wpi 7 "on", todos los demás "off"
-    mov r0, #6 // wpi 6 "on"
-    mov r1, #1
-    bl digitalWrite
 
     mov r0, #7 // wpi 7 "on"
     mov r1, #1
