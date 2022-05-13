@@ -1,7 +1,7 @@
 /**
 * Universidad del Valle de Guatemala
 * Laboratorio 9 - Organización de computadoras y Assembler
-* "Corrimiento de bits activos" - Manejo de puertos GPIO
+* "Corrimiento de bits activos" Temario 1 - Manejo de puertos GPIO
 * carnets: 21242, #######, #######
 **/
 
