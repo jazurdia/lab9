@@ -3,7 +3,7 @@
 * Laboratorio 9 - Organización de computadoras y Assembler
 * "Corrimiento de bits activos" Temario 1 - Manejo de puertos GPIO
 * carnets: 21242, #######, #######
-**/
+**/ 
 
 // Desarrollar un programa en assembler ARM, generar la secuencia mostrada en la siguiente figura por medio
 // del control de puertos GPIO. El cambio de estado se realizará cada 1.5 segundos.
