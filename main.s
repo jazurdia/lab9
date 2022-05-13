@@ -47,11 +47,41 @@ init:
     // GPIO 4  | wPi - 6 | septimo bit
     // GPIO 2  | wPi - 7 | octavo bit
 
-    // primer estado: wpi 0 "on", todos los demás "off"
-    mov r0, #0 // wpi 0 set
+    // setting wpi 0 to 7 as output
+    mov r0, #0
     mov r1, #1
     bl pinMode
 
+    move r0, #1
+    mov r1, #1
+    bl pinMode
+
+    move r0, #2
+    mov r1, #1
+    bl pinMode
+
+    move r0, #3
+    mov r1, #1
+    bl pinMode
+
+    move r0, #4
+    mov r1, #1
+    bl pinMode
+
+    move r0, #5
+    mov r1, #1
+    bl pinMode
+
+    move r0, #6
+    mov r1, #1
+    bl pinMode
+
+    move r0, #7
+    mov r1, #1
+    bl pinMode
+
+
+    // primer estado: wpi 0 "on", todos los demás "off"
     mov r0, #0 // wpi 0 "on"
     mov r1, #1
     bl pinMode
@@ -63,10 +93,6 @@ init:
 
     
     // segundo estado: wpi 0 "on" y wpi 1 "on", todos los demás "off"
-    mov r0, #0 // wpi 0 set
-    mov r1, #1
-    bl pinMode
-
     mov r0, #0 // wpi 0 "on"
     mov r1, #1
     bl digitalWrite
