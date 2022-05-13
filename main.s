@@ -9,7 +9,7 @@
 // del control de puertos GPIO. El cambio de estado se realizará cada 1.5 segundos.
 
 // Figura:
-// 1 - 1, 2 - 3 - 3, 4 - 5 - 5, 6 - 7 - 7, 8
+// 1 - (1, 2) - 3 - (3, 4) - 5 - (5, 6) - 7 - (7, 8)
 
 .data
 .balign 4
