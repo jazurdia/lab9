@@ -52,31 +52,31 @@ init:
     mov r1, #1
     bl pinMode
 
-    move r0, #1 // wpi 1
+    mov r0, #1 // wpi 1
     mov r1, #1
     bl pinMode
 
-    move r0, #2 // wpi 2
+    mov r0, #2 // wpi 2
     mov r1, #1
     bl pinMode
 
-    move r0, #3 // wpi 3
+    mov r0, #3 // wpi 3
     mov r1, #1
     bl pinMode
 
-    move r0, #4 // wpi 4
+    mov r0, #4 // wpi 4
     mov r1, #1
     bl pinMode
 
-    move r0, #5 // wpi 5
+    mov r0, #5 // wpi 5
     mov r1, #1
     bl pinMode
 
-    move r0, #6 // wpi 6
+    mov r0, #6 // wpi 6
     mov r1, #1
     bl pinMode
 
-    move r0, #7 // wpi 7
+    mov r0, #7 // wpi 7
     mov r1, #1
     bl pinMode
 
