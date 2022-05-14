@@ -84,7 +84,7 @@ init:
     // primer estado: wpi 0 "on", todos los demás "off"
     mov r0, #0 // wpi 0 "on"
     mov r1, #1
-    bl pinMode
+    bl digitalWrite
 
     
     // cambio de estado
