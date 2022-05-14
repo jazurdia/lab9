@@ -45,7 +45,7 @@ init:
     // GPIO 24 | wPi - 4 | quinto bit
     // GPIO 25 | wPi - 5 | sexto bit
     // GPIO 4  | wPi - 6 | septimo bit
-    // GPIO 2  | wPi - 7 | octavo bit
+    // GPIO 16  | wPi - 7| | octavo bit
 
     // setting wpi 0 to 7 as output
     mov r0, #0 // wpi 0
@@ -189,6 +189,17 @@ init:
     mov r0, #7 // wpi 7 "on"
     mov r1, #1
     bl digitalWrite
+
+    // apagando luces. (no es un estado)
+    mov r0, #6 // wpi 6 "off"
+    mov r1, #0
+    bl digitalWrite
+
+    mov r0, #7 // wpi 7 "off"
+    mov r1, #0
+    bl digitalWrite
+    
+
 
     b end
 
