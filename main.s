@@ -38,14 +38,14 @@ main:   push 	{ip, lr}
 
 init:
     
-    // GPIO 17 | wPi - 0 | primer bit
-    // GPIO 27 | wPi - 1 | segundo bit
-    // GPIO 22 | wPi - 2 | tercer bit
-    // GPIO 23 | wPi - 3 | cuarto bit
-    // GPIO 24 | wPi - 4 | quinto bit
-    // GPIO 25 | wPi - 5 | sexto bit
-    // GPIO 4  | wPi - 6 | septimo bit
-    // GPIO 16  | wPi - 7| | octavo bit
+    // GPIO 0 | wPi - 0 | primer bit
+    // GPIO 1 | wPi - 1 | segundo bit
+    // GPIO 2 | wPi - 2 | tercer bit
+    // GPIO 3 | wPi - 3 | cuarto bit
+    // GPIO 4 | wPi - 4 | quinto bit
+    // GPIO 5 | wPi - 5 | sexto bit
+    // GPIO 6 | wPi - 6 | septimo bit
+    // GPIO 7 | wPi - 7 | octavo bit
 
     // setting wpi 0 to 7 as output
     mov r0, #0 // wpi 0
@@ -76,7 +76,7 @@ init:
     mov r1, #1
     bl pinMode
 
-    mov r0, #7 // wpi 7
+    mov r0, #27 // wpi 7
     mov r1, #1
     bl pinMode
 
