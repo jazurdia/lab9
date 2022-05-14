@@ -191,6 +191,10 @@ init:
     bl digitalWrite
 
     // apagando luces. (no es un estado)
+
+    mov r0, #5000
+    bl delay
+
     mov r0, #6 // wpi 6 "off"
     mov r1, #0
     bl digitalWrite
@@ -198,7 +202,7 @@ init:
     mov r0, #7 // wpi 7 "off"
     mov r1, #0
     bl digitalWrite
-    
+
 
 
     b end
