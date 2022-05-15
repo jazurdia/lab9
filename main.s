@@ -76,7 +76,7 @@ init:
     mov r1, #1
     bl pinMode
 
-    mov r0, #27 // wpi 7
+    mov r0, #7 // wpi 7
     mov r1, #1
     bl pinMode
 
