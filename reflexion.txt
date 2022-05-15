@@ -1,4 +1,7 @@
 ¿Cuáles fueron los retos que encontramos a lo largo de todo el proyecto? 
+R// Los principales retos con los que nos topamos a la hora de realizar dicho proyecto fueron:
+* Encontrar el algoritmo para lograr que los leds se fueran encendiendo y apagando.
+* Encontrar la manera de mantenerlos en soncronización.
 
 
 ¿Qué fue lo que más nos costó?
