@@ -2,7 +2,7 @@
 * Universidad del Valle de Guatemala
 * Laboratorio 9 - Organización de computadoras y Assembler
 * "Corrimiento de bits activos" Temario 1 - Manejo de puertos GPIO
-* carnets: 21242, 21096, #######
+* Carnets: 21242, 21096, 20289
 **/ 
 
 // Desarrollar un programa en assembler ARM, generar la secuencia mostrada en la siguiente figura por medio
@@ -76,7 +76,7 @@ init:
     mov r1, #1
     bl pinMode
 
-    mov r0, #7 // wpi 7
+    mov r0, #27 // wpi 7
     mov r1, #1
     bl pinMode
 
@@ -202,8 +202,6 @@ init:
     mov r0, #7 // wpi 7 "off"
     mov r1, #0
     bl digitalWrite
-
-
 
     b end
 
